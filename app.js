@@ -24,7 +24,7 @@ function verificarChute() {
     let mensagemTentativas = `Você descobriu o número secreto com ${tentativas} ${palavraTentativa}!`;
     exibirTextoNaTela("p", mensagemTentativas);
     document.getElementById("reiniciar").removeAttribute("disabled");
-    document.getElemenrById("chutar").setAttribute("disabled");
+    document.getElemenrById("chutar").setAttribute("disabled", true);
   } else {
     if (chute > numeroSecreto) {
       exibirTextoNaTela("p", "O número secreto é menor");
